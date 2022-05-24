@@ -1,0 +1,385 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
+/* radio-canada-regular - latin */
+@font-face {
+    font-family: 'Radio Canada';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/radio-canada-v11-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/radio-canada-v11-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* radio-canada-500 - latin */
+@font-face {
+    font-family: 'Radio Canada';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+        url('../fonts/radio-canada-v11-latin-500.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/radio-canada-v11-latin-500.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* radio-canada-700 - latin */
+@font-face {
+    font-family: 'Radio Canada';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/radio-canada-v11-latin-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/radio-canada-v11-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*End of CSS reset */
+
+:root {
+    --fontPrimaryColor: #fdfdfd;
+    --fontSecondaryColor: #000000;
+    --primaryColor: #F4313F;
+    --secondaryColor: #00A19C;
+    --primaryBorderRadius: 1.7rem;
+}
+
+/*Mobile first - Desktop styling at bottom */
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Radio Canada', sans-serif;
+    font-size: 62.5%;
+    font-weight: 400;
+    letter-spacing: 0.009rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    line-height: 1.2;
+}
+
+main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+/*Screenreader only H1 on each page */
+.sr-only {
+    position: absolute;
+    margin: -1px;
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/*Start of Nav section */
+.topSection {
+    /*This is the Nav wrapper */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    height: 33rem;
+    background-color: var(--primaryColor);
+    color: var(--fontPrimaryColor);
+}
+
+nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-top: 2rem;
+    max-width: 1440px;
+}
+
+nav a {
+    text-transform: capitalize;
+    color: var(--fontPrimaryColor);
+    font-weight: 700;
+    font-size: clamp(1rem, 0.545vw + 0.8145rem, 1.6rem);
+    border-style: solid;
+    border-width: 4px;
+    border-radius: var(--primaryBorderRadius);
+    padding: clamp(0.5rem, 1vw, 1rem) 1rem;
+    margin-right: 1.5rem;
+    -webkit-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+nav a:hover,
+nav a:focus {
+    color: var(--primaryColor);
+    background-color: var(--fontPrimaryColor);
+    border-color: var(--fontPrimaryColor);
+}
+
+/* Logo image and name */
+header {
+    /* wrapper */
+    position: relative;
+    top: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+header img {
+    width: clamp(27rem, 55vw, 31.7rem);
+}
+
+
+header h2 {
+    margin: 3rem 2rem 0 2rem;
+    text-align: center;
+    font-size: clamp(2.2rem, 0.909vw + 1.891rem, 3.2rem);
+    font-weight: 700;
+}
+
+/* End of Nav section */
+
+/* Header below Nav section at top of all pages EXCEPT index */
+.pageHeader {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(26, 26, 26);
+    padding: 0 1rem 0 1rem;
+    margin-top: 5rem;
+}
+
+
+.bold {
+    font-weight: 700;
+}
+
+/* Start of footer section */
+footer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    background-color: var(--secondaryColor);
+    margin-top: 4rem;
+}
+
+footer a {
+    color: var(--fontPrimaryColor);
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: clamp(1.2rem, 1.0909vw + 0.829rem, 2.4rem);
+    padding-top: clamp(1rem, 1.8181vw + 0.3818rem, 3rem);
+    padding-bottom: clamp(1rem, 1.8181vw + 0.3818rem, 3rem);
+}
+
+footer a:focus {
+    text-decoration: underline;
+    -webkit-text-decoration-color: black;
+    text-decoration-color: black;
+    text-decoration-thickness: 3px;
+}
+
+/*End f footer section */
+
+
+
+@media(min-width:660px) {
+    header {
+        /*Logo image and name wrapper */
+        top: -2rem;
+    }
+
+    header h2 {
+        margin-top: 4rem;
+    }
+
+
+}

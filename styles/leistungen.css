@@ -1,0 +1,145 @@
+body {
+    background-color: var(--secondaryColor);
+}
+
+main {
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+}
+
+h3 {
+    font-size: clamp(2.2rem, 0.3636vw + 2.076rem, 2.6rem);
+    font-weight: 700;
+    margin-left: clamp(1rem, 1.8181vw + 0.3818rem, 3rem);
+    margin-right: 1rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+ul,
+p {
+    font-size: clamp(1.6rem, 0.7272vw + 1.352rem, 2.4rem);
+}
+
+.specialServicesContainer a,
+.pricesContainer a {
+    font-size: clamp(1.6rem, 0.7272vw + 1.352rem, 2.4rem);
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--primaryColor);
+    text-align: center;
+}
+
+.specialServicesContainer a:hover,
+.pricesContainer a:hover,
+.specialServicesContainer a:focus,
+.pricesContainer a:focus {
+    text-decoration: underline;
+    text-decoration-color: var(--primaryColor);
+    text-decoration-thickness: 3px;
+}
+
+.pageHeader {
+    /*"LEISTUNGEN header */
+    color: var(--secondaryColor);
+    background-color: white;
+    font-size: clamp(5rem, 1.8181vw + 4.381rem, 7rem);
+}
+
+.servicesWrapper,
+.specialServicesWrapper,
+.pricesWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.servicesContainer,
+.specialServicesContainer {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    min-width: 32rem;
+    max-width: 75rem;
+    background-color: white;
+    border-style: dashed none dashed none;
+    border-width: 8px;
+    border-color: var(--secondaryColor);
+    background-image: url("../images/medicalBG.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 5rem;
+}
+
+
+
+.servicesContainer ul {
+    margin-left: clamp(3rem, 1.8181vw + 2.381rem, 5rem);
+}
+
+.servicesContainer li {
+    margin-bottom: 1rem;
+}
+
+.specialServicesContainer p {
+    margin-left: clamp(3rem, 1.8181vw + 2.381rem, 5rem);
+    margin-right: clamp(1rem, 1.8181vw + 0.3818rem, 3rem);
+    margin-bottom: 3rem;
+}
+
+.specialServicesContainer a {
+    padding: 0 0 3rem 0;
+}
+
+/*Prices table at bottom */
+.pricesContainer {
+    width: 95%;
+    min-width: 32rem;
+    max-width: 75rem;
+    background-color: white;
+    border-style: dashed none dashed none;
+    border-width: 8px;
+    border-color: var(--secondaryColor);
+    background-image: url("../images/medicalBG.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pricesContainer th {
+    font-size: clamp(2.2rem, 0.3636vw + 2.076rem, 2.6rem);
+    font-weight: 700;
+    padding: 4rem 0 4rem 0;
+}
+
+.pricesContainer tr td:first-of-type {
+    font-weight: 700;
+    padding-left: clamp(1rem, 1.8181vw + 0.3818rem, 3rem);
+}
+
+.pricesContainer td {
+    font-size: clamp(1.2rem, 0.7272vw + 0.952rem, 2rem);
+    padding-top: 2rem;
+    padding-right: clamp(1rem, 1.8181vw + 0.3818rem, 3rem);
+
+}
+
+#pricelistLink {
+    /* linnk in table */
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    padding-left: clamp(1rem, 1.8181vw + 0.3818rem, 3rem);
+    padding-right: clamp(1rem, 1.8181vw + 0.3818rem, 3rem);
+    text-align: center;
+}
+
+.tableBottomPadding {
+    padding-bottom: 5rem;
+}
+
+
+footer {
+    background-color: var(--primaryColor);
+}

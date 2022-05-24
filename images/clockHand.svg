@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="0.26458332mm"
+   height="1.8mm"
+   viewBox="0 0 0.26458332 1.7999999"
+   version="1.1"
+   id="svg1488"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1490"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="22.627417"
+     inkscape:cx="13.191961"
+     inkscape:cy="3.8006989"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer3">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4080"
+       originx="2.1166667"
+       originy="-3.4916666" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1485" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-42.448597,-74.522278)">
+    <g
+       style="fill:#00a19c;fill-opacity:1"
+       id="g1584"
+       transform="matrix(0.26458333,0,0,0.26458333,44.565264,71.030611)">
+      <path
+         d="M 8,16 A 8,8 0 1 0 8,0 8,8 0 0 0 8,16 Z M 15,8 A 7,7 0 1 1 1,8 7,7 0 0 1 15,8 Z"
+         id="path1574"
+         style="fill:#00a19c;fill-opacity:1" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2"
+     transform="translate(2.1166666,-3.4916666)">
+    <rect
+       style="fill:#00a19c;fill-opacity:1;stroke-width:0.242479"
+       id="rect4108"
+       width="1.2"
+       height="0.26458332"
+       x="2.0999999"
+       y="2"
+       ry="0.047095831" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Layer 3"
+     transform="translate(2.1166666,-3.4916666)">
+    <rect
+       style="fill:#00a19c;fill-opacity:1;stroke-width:0.296975"
+       id="rect4302"
+       width="1.8"
+       height="0.26458332"
+       x="-5.2916665"
+       y="1.8520833"
+       ry="0.047095831"
+       transform="matrix(0,-1,-1,0,0,0)" />
+  </g>
+</svg>
