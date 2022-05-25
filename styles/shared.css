@@ -187,8 +187,10 @@ table {
 :root {
     --fontPrimaryColor: #fdfdfd;
     --fontSecondaryColor: #000000;
-    --primaryColor: #F4313F;
-    --secondaryColor: #00A19C;
+    --primaryColor: #e51d35;
+    /*#F4313F; */
+    --secondaryColor: #008480;
+    /*#00A19C; */
     --primaryBorderRadius: 1.7rem;
 }
 
