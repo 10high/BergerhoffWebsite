@@ -444,12 +444,12 @@ address {
 
 }
 
-.contactContainer h4 {
+.contactContainer .mainHeader {
     font-size: clamp(2.2rem, 0.3636vw + 2.076rem, 2.6rem);
     font-weight: 700;
 }
 
-.contactContainer h5 {
+.contactContainer .subheader {
     font-weight: 500;
     text-decoration: underline;
 }

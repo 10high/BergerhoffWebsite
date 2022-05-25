@@ -188,9 +188,7 @@ table {
     --fontPrimaryColor: #fdfdfd;
     --fontSecondaryColor: #000000;
     --primaryColor: #e51d35;
-    /*#F4313F; */
-    --secondaryColor: #008480;
-    /*#00A19C; */
+    --secondaryColor: #00A19C;
     --primaryBorderRadius: 1.7rem;
 }
 
