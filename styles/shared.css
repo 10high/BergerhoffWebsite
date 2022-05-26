@@ -273,10 +273,12 @@ nav {
 
 nav a {
     text-transform: capitalize;
-    color: var(--fontPrimaryColor);
+    color: var(--primaryColor);
+    background-color: white;
     font-weight: 700;
     font-size: clamp(1rem, 0.545vw + 0.8145rem, 1.6rem);
     border-style: solid;
+    border-color: white;
     border-width: 4px;
     border-radius: var(--primaryBorderRadius);
     padding: clamp(0.5rem, 1vw, 1rem) 1rem;
@@ -288,8 +290,8 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-    color: var(--primaryColor);
-    background-color: var(--fontPrimaryColor);
+    color: var(--fontPrimaryColor);
+    background-color: var(--primaryColor);
     border-color: var(--fontPrimaryColor);
 }
 
