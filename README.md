@@ -39,3 +39,6 @@
  I picked up a lot of tips and tricks from this [youtube video](https://www.youtube.com/watch?v=ivKJthatF70&list=PLMPdeA59PPg3KvGr7ACBhxSKH-1FYIZ3n&index=4&t=1s)
  The main challenge I faced was a slow Largest Contentful Paint speed from the Lighthouse report. This was due to the group photo and led me to learning about and serving two different image sizes with srcset. I had some difficulty understanding Device Pixel Ratio and achieving results in a way I could expect and understand. Although, I'm still a little shaky in this regard, I feel I now have a good foundation to build on. 
 
+
+----July 26 2022 update ---
+- Added a simple vacation notice. It's not particularly attractive or an elegant solution, and it will be removed and replaced eventually when I'm able to use JS to create a modal.
