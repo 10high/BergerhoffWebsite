@@ -38,6 +38,31 @@ main {
     color: var(--primaryColor);
 }
 
+#vacationNotice {
+    align-self: center;
+    width: auto;
+    z-index: 100;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: var(--primaryBorderRadius);
+    border-color: var(--primaryColor);
+    padding: 1rem;
+    font-size: clamp(1.6rem, 0.3636vw + 1.4765rem, 2rem);
+    color: black;
+    font-weight: 700;
+    text-align: center;
+    background-color: white;
+}
+
+#vacationNotice a {
+    color: var(--primaryColor);
+}
+
+#vacationNotice a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+}
+
 .line {
     /*Styles all  HORIZONTAL connection lines on desktop version */
     display: none;
