@@ -45,12 +45,12 @@
 
 ## JavaScript Modal Update
 ### Plan
-[x] Replace CSS checkbox hack with a Javascript modal for the staff info popups
+-[x] Replace CSS checkbox hack with a Javascript modal for the staff info popups
     modal should:
-        [x] Darken screen background
-        [x] Center popup info on screen
-        [x] Window should appear with smooth animation
-        [x] Make accessible through keyboard navigation
-[x] Remove the enlarged heads and replace with a pointer animation indicating clickability
-[x] Attempt to improve srcset image use for the group photo, offering a better small photo size for mobiles
-[x] Update/replace the SVG animations Clock and Megaphone to fix Lighthouse Report complaint about point of origin
+        - [x] Darken screen background
+       - [x] Center popup info on screen
+       - [x] Window should appear with smooth animation
+       - [x] Make accessible through keyboard navigation
+- [x] Remove the enlarged heads and replace with a pointer animation indicating clickability
+- [x] Attempt to improve srcset image use for the group photo, offering a better small photo size for mobiles
+- [x] Update/replace the SVG animations Clock and Megaphone to fix Lighthouse Report complaint about point of origin
