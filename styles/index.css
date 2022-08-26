@@ -6,6 +6,11 @@
 */
 
 /*Mobile first. Desktop styling at very bottom */
+
+[hidden] {
+    display: none !important;
+}
+
 main {
     -webkit-box-align: center;
     align-items: center;
@@ -27,7 +32,8 @@ main {
 
 /*Styles heartbeat and megaphone icons */
 .bi-activity,
-.bi-megaphone {
+.bi-megaphone,
+.bi-clock {
     color: var(--secondaryColor);
 }
 
@@ -92,6 +98,14 @@ main {
     margin-top: 4rem;
 }
 
+.teamPhotoContainer__caption {
+    max-width: fit-content;
+    color: var(--primaryColor);
+    font-size: clamp(1.6rem, 0.3636vw + 1.4765rem, 2rem);
+    font-weight: 700;
+    margin-left: 2rem;
+}
+
 .photoAndHeads {
     position: relative;
     width: 94%;
@@ -107,265 +121,49 @@ main {
     border-width: 6px;
     border-color: var(--primaryColor);
     border-radius: 3.2rem;
-    position: relative;
     z-index: 0;
 }
 
 .heads {
-    /* The enlarged heads */
-    position: absolute;
-    width: 18.75%;
-    min-width: 6.375rem;
-    max-width: 9.525rem;
-    height: auto;
-    opacity: 0;
-    z-index: 1;
-}
-
-.photoAndHeads input {
-    /* The hidden checkboxes over each teammember head */
+    /* The empty divs for selecting staff member info */
     position: absolute;
     z-index: 2;
     width: 10%;
-    height: 10%;
-    opacity: 0;
+    height: 60%;
 }
 
-.photoAndHeads input:hover {
+.heads:hover {
     cursor: pointer;
 }
 
-.checkboxFocused {
-    /*This is an empty div that is used to display focus when a checkbox input is selected via keyboard. */
-    position: absolute;
-    width: 6rem;
-    height: 6rem;
-    z-index: 9;
-}
-
-.popups {
-    /*Wrappers for The popup windows activated by clicking on a head */
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    -webkit-box-align: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: calc(100% - 12px);
-    min-height: 100%;
-    border-radius: 3.2rem;
-    border-style: solid;
-    border-width: 6px;
-    border-color: var(--primaryColor);
-    opacity: 0;
-    background-color: var(--fontPrimaryColor);
-    z-index: -3;
-    -webkit-transition: opacity ease-in-out 0.25s;
-    -o-transition: opacity ease-in-out 0.25s;
-    transition: opacity ease-in-out 0.25s;
-    background-image: url("../images/medicalBG.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.popups label {
-    /*The X close window on each popup window */
-    position: absolute;
-    top: 0.5rem;
-    right: 1rem;
-    font-size: 1.6rem;
-    font-weight: 700;
-    height: 1.7rem;
-    width: 1.7rem;
-    color: var(--secondaryColor);
-}
-
-.popups label:hover {
-    cursor: pointer;
-}
-
-.popups img {
-    /*The profile pics of team members in popup windows */
-    width: clamp(12rem, 1.8181vw + 11.381rem, 14rem);
-    height: auto;
-    border-radius: 0.5rem;
-    margin-top: 1rem;
-}
-
-.popups h2 {
-    /*The team member names in popup windows */
-    font-weight: 700;
-    font-size: clamp(1.8rem, 0.5454vw + 1.614rem, 2.4rem);
-    margin-top: 0.5rem;
-}
-
-
-.popups h3 {
-    /*The job titles for team members in popup windows */
-    font-size: clamp(1.6rem, 0.3636vw + 1.4765rem, 2rem);
-    font-weight: 500;
-    margin-bottom: 1rem;
-}
-
-
-.popups ul {
-    /*Work history info for SOME of the team members */
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    -webkit-box-align: center;
-    align-items: center;
-    font-size: clamp(1.6rem, 0.3636vw + 1.4765rem, 2rem);
-    text-align: center;
-    margin: 0 1.5rem 1.5rem 1.5rem;
-}
-
-.popups li:first-of-type {
-    font-weight: 500;
-}
-
-.popups p {
-    /*Work history info for SOME of the team members */
-    font-size: clamp(1.6rem, 0.3636vw + 1.4765rem, 2rem);
-    margin: 0 1.5rem 1.5rem 1.5rem;
-    text-align: center;
-}
-
-.harry {
-    /*Positions Harry's enlarged head */
-    left: 10%;
-    bottom: 62.61%;
-}
-
-#harryInfo {
-    /*Positions hidden checkbox for Harry */
+.harryInfo {
+    /*Positions div for Harry */
     left: 15%;
-    bottom: 78%;
+    bottom: 28%;
 }
 
-#harryInfo:checked~.harryPopup,
-#harryInfo:focus~.harryPopup {
-    /*This combination allows the profile info windows to be opened either by clicking on them or by focuing on them. Defocusing them automatically closes them */
-    z-index: 10;
-    opacity: 1;
-}
-
-#harryInfo:focus-visible~.checkboxFocused {
-    left: 12%;
-    bottom: 70%;
-    border-style: solid;
-    border-width: 4px;
-    border-color: black;
-}
-
-.eisenhuth {
-    /*Positions eisenhuth's enlarged head */
-    left: 29%;
-    bottom: 56%;
-}
-
-#eisenhuthInfo {
-    /*Positions hidden checkbox for eisenhuth */
+.eisenhuthInfo {
+    /*Positions div for eisenhuth */
     left: 33%;
-    bottom: 70%;
+    bottom: 20%;
 }
 
-#eisenhuthInfo:checked~.eisenhuthPopup,
-#eisenhuthInfo:focus~.eisenhuthPopup {
-    z-index: 10;
-    opacity: 1;
-}
-
-#eisenhuthInfo:focus-visible~.checkboxFocused {
-    left: 30%;
-    bottom: 65%;
-    border-style: solid;
-    border-width: 4px;
-    border-color: black;
-}
-
-.melanie {
-    /*Positions melanie's enlarged head */
-    left: 44%;
-    bottom: 53%;
-}
-
-#melanieInfo {
-    /*Positions hidden checkbox for melanie */
+.melanieInfo {
+    /*Positions div for melanie */
     left: 48%;
-    bottom: 68%;
+    bottom: 18%;
 }
 
-#melanieInfo:checked~.melaniePopup,
-#melanieInfo:focus~.melaniePopup {
-    z-index: 10;
-    opacity: 1;
-}
-
-#melanieInfo:focus-visible~.checkboxFocused {
-    left: 46%;
-    bottom: 62%;
-    border-style: solid;
-    border-width: 4px;
-    border-color: black;
-}
-
-.carmen {
-    /*Positions carmen's enlarged head */
-    left: 64%;
-    bottom: 48.5%;
-}
-
-#carmenInfo {
-    /*Positions hidden checkbox for Carmen */
+.carmenInfo {
+    /*Positions div for Carmen */
     left: 68%;
-    bottom: 60%;
+    bottom: 10%;
 }
 
-#carmenInfo:checked~.carmenPopup,
-#carmenInfo:focus~.carmenPopup {
-    z-index: 10;
-    opacity: 1;
-}
-
-#carmenInfo:focus-visible~.checkboxFocused {
-    left: 65%;
-    bottom: 57%;
-    border-style: solid;
-    border-width: 4px;
-    border-color: black;
-}
-
-.miriam {
-    /*Positions miriam's enlarged head */
-    left: 75%;
-    bottom: 52%;
-}
-
-#miriamInfo {
-    /*Positions hidden checkbox for Miriam */
+.miriamInfo {
+    /*Positions div for Miriam */
     left: 81%;
-    bottom: 66%;
-}
-
-#miriamInfo:checked~.miriamPopup,
-#miriamInfo:focus~.miriamPopup {
-    z-index: 10;
-    opacity: 1;
-}
-
-#miriamInfo:focus-visible~.checkboxFocused {
-    left: 80%;
-    bottom: 61%;
-    border-style: solid;
-    border-width: 4px;
-    border-color: black;
+    bottom: 16%;
 }
 
 
@@ -380,25 +178,6 @@ main {
     align-items: center;
 }
 
-.clockContainer {
-    position: relative;
-    margin-bottom: 1rem;
-}
-
-.clock {
-    width: 6.4rem;
-    height: 6.4rem;
-    -webkit-transform: rotateZ(10deg);
-    transform: rotateZ(10deg);
-}
-
-.clockHand {
-    position: absolute;
-    right: 29px;
-    top: 7.5px;
-    width: 0.4rem;
-    height: 2.5rem;
-}
 
 .openingTimes {
     display: -webkit-box;
@@ -663,6 +442,113 @@ address {
 
 }
 
+/* Styling the modal */
+.modal {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: hsla(0, 0%, 0%, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popups {
+    /*Wrappers for The popup windows activated by clicking on a head */
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    width: calc(100% - 12px);
+    max-width: 375px;
+    height: fit-content;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 3.2rem;
+    border-style: solid;
+    border-width: 6px;
+    border-color: var(--primaryColor);
+    background-color: var(--fontPrimaryColor);
+    z-index: 110;
+    opacity: 0;
+    background-image: url("../images/medicalBG.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.popupFade {
+    animation-duration: 0.25s;
+    animation-timing-function: ease-in-out;
+    animation-name: fade;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.popups img {
+    /*The profile pics of team members in popup windows */
+    width: clamp(12rem, 1.8181vw + 11.381rem, 14rem);
+    height: auto;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+.popups h2 {
+    /*The team member names in popup windows */
+    font-weight: 700;
+    font-size: clamp(1.8rem, 0.5454vw + 1.614rem, 2.4rem);
+    margin-top: 0.5rem;
+}
+
+
+.popups h3 {
+    /*The job titles for team members in popup windows */
+    font-size: clamp(1.6rem, 0.3636vw + 1.4765rem, 2rem);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+
+.popups ul {
+    /*Work history info for SOME of the team members */
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: clamp(1.6rem, 0.3636vw + 1.4765rem, 2rem);
+    text-align: center;
+    margin: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.popups li:first-of-type {
+    font-weight: 500;
+}
+
+.popups p {
+    /*Work history info for SOME of the team members */
+    font-size: clamp(1.6rem, 0.3636vw + 1.4765rem, 2rem);
+    margin: 0 1.5rem 1.5rem 1.5rem;
+    text-align: center;
+}
+
 
 /*ANIMATIONS!*/
 .bi-activity {
@@ -700,273 +586,6 @@ address {
 }
 
 
-
-.harry {
-    /*harry's enlarged head */
-    -webkit-animation-name: harry;
-    animation-name: harry;
-    -webkit-animation-duration: 10s;
-    animation-duration: 10s;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-timing-function: step-start;
-    animation-timing-function: step-start;
-}
-
-@-webkit-keyframes harry {
-    from {
-        opacity: 1;
-    }
-
-    20% {
-        opacity: 1;
-
-    }
-
-    to {
-        opacity: 0;
-    }
-}
-
-@keyframes harry {
-    from {
-        opacity: 1;
-    }
-
-    20% {
-        opacity: 1;
-
-    }
-
-    to {
-        opacity: 0;
-    }
-}
-
-.eisenhuth {
-    /*eisenhuth's enlarged head */
-    -webkit-animation-name: eisenhuth;
-    animation-name: eisenhuth;
-    -webkit-animation-duration: 10s;
-    animation-duration: 10s;
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-timing-function: step-start;
-    animation-timing-function: step-start;
-}
-
-@-webkit-keyframes eisenhuth {
-    from {
-        opacity: 1;
-    }
-
-    20% {
-        opacity: 1;
-
-    }
-
-    to {
-        opacity: 0;
-    }
-}
-
-@keyframes eisenhuth {
-    from {
-        opacity: 1;
-    }
-
-    20% {
-        opacity: 1;
-
-    }
-
-    to {
-        opacity: 0;
-    }
-}
-
-
-.melanie {
-    /*melanie's enlarged head */
-    -webkit-animation-name: melanie;
-    animation-name: melanie;
-    -webkit-animation-duration: 10s;
-    animation-duration: 10s;
-    -webkit-animation-delay: 4s;
-    animation-delay: 4s;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-timing-function: step-start;
-    animation-timing-function: step-start;
-}
-
-@-webkit-keyframes melanie {
-    from {
-        opacity: 1;
-    }
-
-    20% {
-        opacity: 1;
-
-    }
-
-    to {
-        opacity: 0;
-    }
-}
-
-@keyframes melanie {
-    from {
-        opacity: 1;
-    }
-
-    20% {
-        opacity: 1;
-
-    }
-
-    to {
-        opacity: 0;
-    }
-}
-
-.carmen {
-    /*carmen's enlarged head */
-    -webkit-animation-name: carmen;
-    animation-name: carmen;
-    -webkit-animation-duration: 10s;
-    animation-duration: 10s;
-    -webkit-animation-delay: 6s;
-    animation-delay: 6s;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-timing-function: step-start;
-    animation-timing-function: step-start;
-}
-
-@-webkit-keyframes carmen {
-    from {
-        opacity: 1;
-    }
-
-    20% {
-        opacity: 1;
-
-    }
-
-    to {
-        opacity: 0;
-    }
-}
-
-@keyframes carmen {
-    from {
-        opacity: 1;
-    }
-
-    20% {
-        opacity: 1;
-
-    }
-
-    to {
-        opacity: 0;
-    }
-}
-
-.miriam {
-    /*miriam's enlarged head */
-    -webkit-animation-name: miriam;
-    animation-name: miriam;
-    -webkit-animation-duration: 10s;
-    animation-duration: 10s;
-    -webkit-animation-delay: 8s;
-    animation-delay: 8s;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-timing-function: step-start;
-    animation-timing-function: step-start;
-}
-
-@-webkit-keyframes miriam {
-    from {
-        opacity: 1;
-    }
-
-    20% {
-        opacity: 1;
-
-    }
-
-    to {
-        opacity: 0;
-    }
-}
-
-@keyframes miriam {
-    from {
-        opacity: 1;
-    }
-
-    20% {
-        opacity: 1;
-
-    }
-
-    to {
-        opacity: 0;
-    }
-}
-
-
-
-.clockHand {
-    /*clock animation */
-    -webkit-animation-duration: 4s;
-    animation-duration: 4s;
-    -webkit-animation-name: ticktock;
-    animation-name: ticktock;
-    -webkit-animation-timing-function: steps(4, end);
-    animation-timing-function: steps(4, end);
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes ticktock {
-    from {
-        -webkit-transform: rotateZ(0deg);
-        transform: rotateZ(0deg);
-        -webkit-transform-origin: bottom;
-        transform-origin: bottom;
-    }
-
-    to {
-        -webkit-transform: rotateZ(360deg);
-        transform: rotateZ(360deg);
-        -webkit-transform-origin: bottom;
-        transform-origin: bottom;
-    }
-}
-
-@keyframes ticktock {
-    from {
-        -webkit-transform: rotateZ(0deg);
-        transform: rotateZ(0deg);
-        -webkit-transform-origin: bottom;
-        transform-origin: bottom;
-    }
-
-    to {
-        -webkit-transform: rotateZ(360deg);
-        transform: rotateZ(360deg);
-        -webkit-transform-origin: bottom;
-        transform-origin: bottom;
-    }
-}
-
-
 .bi-megaphone {
     /*megaphone animation */
     -webkit-animation-duration: 2s;
@@ -985,22 +604,16 @@ address {
     from {
         -webkit-transform: rotateZ(0deg);
         transform: rotateZ(0deg);
-        -webkit-transform-origin: bottom;
-        transform-origin: bottom;
     }
 
     25% {
         -webkit-transform: rotateZ(-15deg);
         transform: rotateZ(-15deg);
-        -webkit-transform-origin: left;
-        transform-origin: left;
     }
 
     to {
         -webkit-transform: rotateZ(-15deg);
         transform: rotateZ(-15deg);
-        -webkit-transform-origin: left;
-        transform-origin: left;
     }
 
 }
@@ -1009,22 +622,16 @@ address {
     from {
         -webkit-transform: rotateZ(0deg);
         transform: rotateZ(0deg);
-        -webkit-transform-origin: bottom;
-        transform-origin: bottom;
     }
 
     25% {
         -webkit-transform: rotateZ(-15deg);
         transform: rotateZ(-15deg);
-        -webkit-transform-origin: left;
-        transform-origin: left;
     }
 
     to {
         -webkit-transform: rotateZ(-15deg);
         transform: rotateZ(-15deg);
-        -webkit-transform-origin: left;
-        transform-origin: left;
     }
 
 }
