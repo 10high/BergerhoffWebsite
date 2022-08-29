@@ -1,11 +1,9 @@
 /*
 * Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.12,
-* Autoprefixer: v10.4.4
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
 * Browsers: last 4 version,> 1%,not ie > 0,not ie_mob > 0
 */
-
-/*Mobile first. Desktop styling at very bottom */
 
 [hidden] {
     display: none !important;
@@ -99,6 +97,8 @@ main {
 }
 
 .teamPhotoContainer__caption {
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
     color: var(--primaryColor);
     font-size: clamp(1.6rem, 0.3636vw + 1.4765rem, 2rem);
@@ -450,9 +450,12 @@ address {
     min-width: 100vw;
     min-height: 100vh;
     background-color: hsla(0, 0%, 0%, 0.7);
+    display: -webkit-box;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
 }
 
 .popups {
@@ -466,6 +469,8 @@ address {
     align-items: center;
     width: calc(100% - 12px);
     max-width: 375px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     max-height: 90vh;
     overflow-y: auto;
@@ -483,11 +488,26 @@ address {
 
 
 .popupFade {
-    animation-duration: 0.25s;
-    animation-timing-function: ease-in-out;
-    animation-name: fade;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    -webkit-animation-duration: 0.25s;
+            animation-duration: 0.25s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-name: fade;
+            animation-name: fade;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fade {
