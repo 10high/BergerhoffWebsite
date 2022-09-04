@@ -14,27 +14,35 @@ const addEvent2Array = (arr, eventType, action) => {
     arr.forEach(item => item.addEventListener(eventType, action));
 };
 
+const closeStaffWindow = (selectorProperty) => {
+    const openWindow = document.querySelector(modalWindows[selectorProperty]);
+    openWindow.classList.toggle("popupFade");
+    openWindow.hidden = true;
+    document.querySelector(".modal").hidden = true;
+}
+
+const staffWindowHasFocus = selectorProperty => {
+    const selectedStaff = document.getElementById(selectorProperty);
+    const delay = setInterval(() => {
+        if (!selectedStaff.matches(":focus")) {
+            closeStaffWindow(selectorProperty);
+            clearInterval(delay);
+        }
+    }, 300)
+}
+
 const showStaffInfo = (event) => {
     if (event.type === "click" || event.code === "Enter") {
         const selectorProperty = event.target.getAttribute("id");
-        document.querySelector(modalWindows[selectorProperty]).hidden = false;
-        document.querySelector(modalWindows[selectorProperty]).classList.toggle("popupFade");
+        const openWindow = document.querySelector(modalWindows[selectorProperty]);
+        openWindow.hidden = false;
+        openWindow.classList.toggle("popupFade");
         document.querySelector(".modal").hidden = false;
-        modalWindows.currentWindowOpen = modalWindows[selectorProperty];
+        staffWindowHasFocus(selectorProperty);
     }
 }
 
-const closeStaffWindow = (event) => {
-    if (event.type === "click" || event.code === "Escape") {
-        document.querySelector(modalWindows.currentWindowOpen).classList.toggle("popupFade");
-        document.querySelector(modalWindows.currentWindowOpen).hidden = true;
-        document.querySelector(".modal").hidden = true;
-        modalWindows.currentWindowOpen = "";
-    }
-}
 
 addEvent2Array(querySelectAllArr(".heads"), "click", showStaffInfo);
 addEvent2Array(querySelectAllArr(".heads"), "keydown", showStaffInfo);
-addEvent2Array(querySelectAllArr(".heads"), "keydown", closeStaffWindow);
-addEvent2Array(querySelectAllArr(".modal"), "click", closeStaffWindow);
 
