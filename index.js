@@ -18,6 +18,7 @@ const closeStaffWindow = (selectorProperty) => {
     openWindow.classList.remove("popupFade");
     openWindow.hidden = true;
     document.querySelector(".modal").hidden = true;
+    window.onscroll = "";
 }
 
 const staffSelectorHasFocus = selectorProperty => {
@@ -30,6 +31,12 @@ const staffSelectorHasFocus = selectorProperty => {
     }, 300)
 }
 
+const lockScreen = () => {
+    const yScroll = window.scrollY;
+    const xScroll = window.scrollX;
+    window.onscroll = () => { window.scroll(xScroll, yScroll); };
+}
+
 const showStaffInfo = (event) => {
     if (event.type === "click" || event.key === "Enter") {
         const selectorProperty = event.target.getAttribute("id");
@@ -37,6 +44,7 @@ const showStaffInfo = (event) => {
         openWindow.hidden = false;
         openWindow.classList.add("popupFade");
         document.querySelector(".modal").hidden = false;
+        lockScreen();
         staffSelectorHasFocus(selectorProperty);
     }
     if (event.key === "Escape") {
