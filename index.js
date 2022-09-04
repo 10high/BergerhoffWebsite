@@ -5,7 +5,6 @@ const modalWindows = {
     "melanieSelector": "#melanieWindow",
     "carmenSelector": "#carmenWindow",
     "miriamSelector": "#miriamWindow",
-    currentWindowOpen: ""
 };
 
 const querySelectAllArr = query => document.querySelectorAll(query);
@@ -16,12 +15,12 @@ const addEvent2Array = (arr, eventType, action) => {
 
 const closeStaffWindow = (selectorProperty) => {
     const openWindow = document.querySelector(modalWindows[selectorProperty]);
-    openWindow.classList.toggle("popupFade");
+    openWindow.classList.remove("popupFade");
     openWindow.hidden = true;
     document.querySelector(".modal").hidden = true;
 }
 
-const staffWindowHasFocus = selectorProperty => {
+const staffSelectorHasFocus = selectorProperty => {
     const selectedStaff = document.getElementById(selectorProperty);
     const delay = setInterval(() => {
         if (!selectedStaff.matches(":focus")) {
@@ -32,13 +31,17 @@ const staffWindowHasFocus = selectorProperty => {
 }
 
 const showStaffInfo = (event) => {
-    if (event.type === "click" || event.code === "Enter") {
+    if (event.type === "click" || event.key === "Enter") {
         const selectorProperty = event.target.getAttribute("id");
         const openWindow = document.querySelector(modalWindows[selectorProperty]);
         openWindow.hidden = false;
-        openWindow.classList.toggle("popupFade");
+        openWindow.classList.add("popupFade");
         document.querySelector(".modal").hidden = false;
-        staffWindowHasFocus(selectorProperty);
+        staffSelectorHasFocus(selectorProperty);
+    }
+    if (event.key === "Escape") {
+        const selectorProperty = event.target.getAttribute("id");
+        closeStaffWindow(selectorProperty);
     }
 }
 
