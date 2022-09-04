@@ -138,31 +138,31 @@ main {
 
 .harryInfo {
     /*Positions div for Harry */
-    left: 15%;
-    bottom: 28%;
+    left: 13%;
+    bottom: 24%;
 }
 
 .eisenhuthInfo {
     /*Positions div for eisenhuth */
-    left: 33%;
-    bottom: 20%;
+    left: 32%;
+    bottom: 18%;
 }
 
 .melanieInfo {
     /*Positions div for melanie */
-    left: 48%;
-    bottom: 18%;
+    left: 49%;
+    bottom: 16%;
 }
 
 .carmenInfo {
     /*Positions div for Carmen */
-    left: 68%;
+    left: 66%;
     bottom: 10%;
 }
 
 .miriamInfo {
     /*Positions div for Miriam */
-    left: 81%;
+    left: 82%;
     bottom: 16%;
 }
 
@@ -453,9 +453,9 @@ address {
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: center;
-            justify-content: center;
+    justify-content: center;
     -webkit-box-align: center;
-            align-items: center;
+    align-items: center;
 }
 
 .popups {
@@ -489,15 +489,15 @@ address {
 
 .popupFade {
     -webkit-animation-duration: 0.25s;
-            animation-duration: 0.25s;
+    animation-duration: 0.25s;
     -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
     -webkit-animation-name: fade;
-            animation-name: fade;
+    animation-name: fade;
     -webkit-animation-iteration-count: 1;
-            animation-iteration-count: 1;
+    animation-iteration-count: 1;
     -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes fade {
