@@ -5,6 +5,8 @@ const modalWindows = {
     "melanieSelector": "#melanieWindow",
     "carmenSelector": "#carmenWindow",
     "miriamSelector": "#miriamWindow",
+    "ubaxSelector": "#ubaxWindow",
+    "annaSelector": "#annaWindow"
 };
 
 const querySelectAllArr = query => document.querySelectorAll(query);

@@ -128,7 +128,7 @@ main {
     /* The empty divs for selecting staff member info */
     position: absolute;
     z-index: 2;
-    width: 10%;
+    width: 8%;
     height: 60%;
 }
 
@@ -138,32 +138,44 @@ main {
 
 .harryInfo {
     /*Positions div for Harry */
-    left: 13%;
-    bottom: 24%;
+    left: 76%;
+    bottom: 22%;
 }
 
 .eisenhuthInfo {
     /*Positions div for eisenhuth */
-    left: 32%;
-    bottom: 18%;
+    left: 53%;
+    bottom: 17%;
 }
 
 .melanieInfo {
     /*Positions div for melanie */
-    left: 49%;
-    bottom: 16%;
+    left: 18%;
+    bottom: 12%;
 }
 
 .carmenInfo {
     /*Positions div for Carmen */
-    left: 66%;
+    left: 65%;
     bottom: 10%;
 }
 
 .miriamInfo {
     /*Positions div for Miriam */
-    left: 82%;
-    bottom: 16%;
+    left: 29%;
+    bottom: 11%;
+}
+
+.ubaxInfo {
+    /*Positions div for Ubax */
+    left: 41%;
+    bottom: 5%;
+}
+
+.annaInfo {
+    /*Positions div for Anna */
+    left: 6%;
+    bottom: 10%;
 }
 
 
