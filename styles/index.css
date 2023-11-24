@@ -264,11 +264,14 @@ li {
 }
 
 .urlaubHighlightDates {
-  text-decoration: underline;
   font-weight: 500;
 }
 .urlaubHighlightNames {
   font-weight: 500;
+}
+
+.urlaubSpacer {
+  margin-top: 8px;
 }
 
 /*Section wrapper */
