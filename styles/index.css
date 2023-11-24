@@ -31,7 +31,8 @@ main {
 /*Styles heartbeat and megaphone icons */
 .bi-activity,
 .bi-megaphone,
-.bi-clock {
+.bi-clock,
+.bi-sun-fill {
   color: var(--secondaryColor);
 }
 
@@ -228,6 +229,46 @@ address {
 .contactContainer .subheader {
   font-weight: 500;
   text-decoration: underline;
+}
+
+.urlaubContainer {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.urlaubContainer section {
+  border-style: solid;
+  border-width: 6px;
+  border-color: var(--primaryColor);
+  border-radius: var(--primaryBorderRadius);
+  background-color: white;
+  padding: 1rem 1.75rem 1.5rem 1.75rem;
+}
+
+.urlaubContainer .mainHeader {
+  font-size: clamp(2.2rem, 0.3636vw + 2.076rem, 2.6rem);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.urlaubContainer p,
+li {
+  text-align: left;
+  font-size: clamp(1.6rem, 0.3636vw + 1.4765rem, 2rem);
+}
+
+.urlaubHighlightDates {
+  text-decoration: underline;
+  font-weight: 500;
+}
+.urlaubHighlightNames {
+  font-weight: 500;
 }
 
 /*Section wrapper */
@@ -617,6 +658,24 @@ address {
   to {
     -webkit-transform: rotateZ(-15deg);
     transform: rotateZ(-15deg);
+  }
+}
+
+.bi-sun-fill {
+  /*Sun animation */
+  -webkit-animation: rotate 8s linear infinite;
+  animation: rotate 8s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
   }
 }
 
@@ -1033,6 +1092,18 @@ address {
     /*section wrapper */
     grid-column: 11 / 13;
     grid-row: 1 / 6;
+    margin: 5rem 5rem 0 0;
+  }
+
+  .lineToUrlaubsNotizen {
+    grid-column: 8/10;
+    grid-row: 9 / 9;
+  }
+
+  .urlaubContainer {
+    /*section wrapper */
+    grid-column: 10 / 14;
+    grid-row: 7 / 10;
     margin: 5rem 5rem 0 0;
   }
 
