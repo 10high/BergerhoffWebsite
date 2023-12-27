@@ -171,12 +171,10 @@ main {
 
 .openingTimes h4 {
   font-size: clamp(2.2rem, 0.3636vw + 2.076rem, 2.6rem);
-  font-weight: 700;
 }
 
 .openingTimes h5 {
   font-size: clamp(1.8rem, 0.5454vw + 1.614rem, 2.4rem);
-  font-weight: 500;
   text-decoration: underline;
   text-transform: capitalize;
 }
@@ -253,7 +251,6 @@ address {
 
 .urlaubContainer .mainHeader {
   font-size: clamp(2.2rem, 0.3636vw + 2.076rem, 2.6rem);
-  font-weight: 700;
   text-align: center;
   margin-bottom: 1rem;
 }
