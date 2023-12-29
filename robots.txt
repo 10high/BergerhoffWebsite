@@ -1,6 +1,4 @@
 User-agent: *
-Disallow: /php/
-Disallow: /fonts/
+Disallow: 
 Disallow: /images/
-Disallow: /styles/
 Sitemap: https://www.praxisbergerhoff.de/sitemap.xml
