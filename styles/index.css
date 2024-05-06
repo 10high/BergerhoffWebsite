@@ -9,6 +9,11 @@
   display: none !important;
 }
 
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
 main {
   -webkit-box-align: center;
   align-items: center;
