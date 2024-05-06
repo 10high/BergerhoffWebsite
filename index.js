@@ -1,6 +1,6 @@
 const modalWindows = {
   harrySelector: "#harryWindow",
-  eisenhuthSelector: "#eisenhuthWindow",
+  gerstnerSelector: "#gerstnerWindow",
   melanieSelector: "#melanieWindow",
   carmenSelector: "#carmenWindow",
   miriamSelector: "#miriamWindow",

@@ -119,32 +119,32 @@ main {
 
 .harryInfo {
   /*Positions div for Harry */
-  left: 15%;
-  bottom: 25%;
+  left: 13%;
+  bottom: 15%;
 }
 
-.eisenhuthInfo {
-  /*Positions div for eisenhuth */
-  left: 33%;
-  bottom: 17%;
+.gerstnerInfo {
+  /*Positions div for gerstner */
+  left: 76%;
+  bottom: 15%;
 }
 
 .melanieInfo {
   /*Positions div for melanie */
-  left: 49%;
-  bottom: 15%;
+  left: 41%;
+  bottom: 2%;
 }
 
 .carmenInfo {
   /*Positions div for Carmen */
-  left: 67.5%;
-  bottom: 10%;
+  left: 24%;
+  bottom: 2%;
 }
 
 .miriamInfo {
   /*Positions div for Miriam */
-  left: 81%;
-  bottom: 15%;
+  left: 58%;
+  bottom: 2%;
 }
 
 /*Section wrapper */
