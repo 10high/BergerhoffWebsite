@@ -234,6 +234,17 @@ address {
   text-decoration: underline;
 }
 
+.contactContainer a {
+  color: var(--fontSecondaryColor);
+  font-weight: 400;
+  font-size: inherit;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  -webkit-text-decoration-color: var(--primaryColor);
+  text-decoration-color: var(--primaryColor);
+}
+
 .urlaubContainer {
   display: -webkit-box;
   display: flex;
