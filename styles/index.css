@@ -987,7 +987,7 @@ li {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1360px) {
   main {
     display: grid;
     grid-template-columns: repeat(12, 10rem);
@@ -1096,7 +1096,7 @@ li {
 
   .contactContainer {
     /*section wrapper */
-    grid-column: 11 / 13;
+    grid-column: 11 / 14;
     grid-row: 1 / 6;
     margin: 5rem 5rem 0 0;
   }
