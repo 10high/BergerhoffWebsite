@@ -202,4 +202,21 @@ async function displayHolidayData() {
 
 addEvent2Array(querySelectAllArr(".heads"), "click", showStaffInfo);
 addEvent2Array(querySelectAllArr(".heads"), "keydown", showStaffInfo);
+
+document
+  .getElementById("harryCloseBtn")
+  .addEventListener("click", () => closeStaffWindow("harrySelector"));
+document
+  .getElementById("gerstnerCloseBtn")
+  .addEventListener("click", () => closeStaffWindow("gerstnerSelector"));
+document
+  .getElementById("melanieCloseBtn")
+  .addEventListener("click", () => closeStaffWindow("melanieSelector"));
+document
+  .getElementById("carmenCloseBtn")
+  .addEventListener("click", () => closeStaffWindow("carmenSelector"));
+document
+  .getElementById("miriamCloseBtn")
+  .addEventListener("click", () => closeStaffWindow("miriamSelector"));
+
 document.addEventListener("DOMContentLoaded", displayHolidayData);
