@@ -487,6 +487,21 @@ li {
   align-items: center;
 }
 
+.popup__closeButtonWrapper {
+  margin: 8px auto 0 32px;
+}
+
+.popup__closeButton {
+  border: solid 1px #e51d35;
+  border-radius: 4px;
+  padding: 2px 8px;
+  background-color: #e51d35;
+  color: white;
+  font-weight: 700;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
 .popups {
   /*Wrappers for The popup windows activated by clicking on a head */
   display: -webkit-box;
