@@ -147,10 +147,10 @@
           ></div>
           <div
             tabindex="0"
-            class="heads gerstnerInfo"
-            id="gerstnerSelector"
+            class="heads carmenInfo"
+            id="carmenSelector"
             role="button"
-            aria-label="Auswählen, um mehr Info zu Dr. Martin Gerstner lesen"
+            aria-label="Auswählen, um mehr Info zu Carmen Menz lesen"
           ></div>
           <div
             tabindex="0"
@@ -161,17 +161,17 @@
           ></div>
           <div
             tabindex="0"
-            class="heads carmenInfo"
-            id="carmenSelector"
-            role="button"
-            aria-label="Auswählen, um mehr Info zu Carmen Menz lesen"
-          ></div>
-          <div
-            tabindex="0"
             class="heads miriamInfo"
             id="miriamSelector"
             role="button"
             aria-label="Auswählen, um mehr Info zu Miriam Hartmann lesen"
+          ></div>
+          <div
+            tabindex="0"
+            class="heads gerstnerInfo"
+            id="gerstnerSelector"
+            role="button"
+            aria-label="Auswählen, um mehr Info zu Dr. Martin Gerstner lesen"
           ></div>
         </div>
       </div>
@@ -571,6 +571,11 @@
 
     <div hidden class="modal">
       <section hidden id="harryWindow" class="popups">
+        <div class="popup__closeButtonWrapper">
+          <button id="harryCloseBtn" type="button" class="popup__closeButton">
+            X
+          </button>
+        </div>
         <img
           src="images/Bergerhoff_profil.webp"
           alt="Dr. Harald Bergerhoff, Allgemeinarzt, Wermelskirchen"
@@ -635,7 +640,103 @@
           </li>
         </ul>
       </section>
+
+      <section hidden id="carmenWindow" class="popups">
+        <div class="popup__closeButtonWrapper">
+          <button id="carmenCloseBtn" type="button" class="popup__closeButton">
+            X
+          </button>
+        </div>
+        <img
+          src="images/Carmen_profil.webp"
+          alt="Carmen Menz"
+          width="219"
+          height="328"
+          loading="lazy"
+        />
+        <h2>Carmen Menz</h2>
+        <h3>Medizinische Fachangestellte</h3>
+        <p>
+          Ausbildung zur medizinischen Fachangestellten in einer orthopädischen
+          Praxis. Danach Tätigkeiten in verschiedenen Fachbereichen wie z.B.
+          Dermatologie und Abrechnungswesen.
+        </p>
+        <ul>
+          <li>Von 2011 bis 2016</li>
+          <li>Anstellung in einer chirurgischen Praxis</li>
+        </ul>
+        <ul>
+          <li>Seit 01.04.2016</li>
+          <li>verstärke ich das Team in dieser Praxis</li>
+        </ul>
+      </section>
+
+      <section hidden id="melanieWindow" class="melaniePopup popups">
+        <div class="popup__closeButtonWrapper">
+          <button id="melanieCloseBtn" type="button" class="popup__closeButton">
+            X
+          </button>
+        </div>
+        <img
+          src="images/Melanie_profil.webp"
+          alt="Melanie Groß"
+          width="219"
+          height="328"
+          loading="lazy"
+        />
+        <h2>Melanie Groß</h2>
+        <h3>Medizinische Fachangestellte</h3>
+        <p>Ausbildung zur medizininischen Fachangestellten.</p>
+        <ul>
+          <li>2006 bis 2009</li>
+          <li>Anstellung in einer orthopädischen Praxis</li>
+        </ul>
+        <ul>
+          <li>2009 bis 2016</li>
+          <li>Tätigkeit in einer chirurgischen Praxis.</li>
+        </ul>
+        <ul>
+          <li>Seit 01.08.2016</li>
+          <li>verstärke ich das Team dieser Praxis.</li>
+        </ul>
+      </section>
+
+      <section hidden id="miriamWindow" class="popups">
+        <div class="popup__closeButtonWrapper">
+          <button id="miriamCloseBtn" type="button" class="popup__closeButton">
+            X
+          </button>
+        </div>
+        <img
+          src="images/Miriam_profil.webp"
+          alt="Miriam Hartmann"
+          width="219"
+          height="328"
+          loading="lazy"
+        />
+        <h2>Miriam Hartmann</h2>
+        <h3>Medizinische Fachangestellte</h3>
+        <p>
+          Ausbildung zur Medizinischen Fachangestellten in dieser Praxis unter
+          Herrn Dr. Wahabzadeh. <br />Nach Babypause Tätigkeit in einer
+          Kinderarztpraxis
+        </p>
+        <ul>
+          <li>2009</li>
+          <li>Wechsel zurück an ihre alte Wirkungsstätte</li>
+        </ul>
+        <p>Diabetologische Fortbildungen und Schulungen im Wundmanagement</p>
+      </section>
       <section hidden id="gerstnerWindow" class="popups">
+        <div class="popup__closeButtonWrapper">
+          <button
+            id="gerstnerCloseBtn"
+            type="button"
+            class="popup__closeButton"
+          >
+            X
+          </button>
+        </div>
         <img
           src="images/Gerstner_profil.webp"
           alt="Dr. Martin Gerstner"
@@ -695,76 +796,6 @@
             Harald Bergerhoff
           </li>
         </ul>
-      </section>
-      <section hidden id="melanieWindow" class="melaniePopup popups">
-        <img
-          src="images/Melanie_profil.webp"
-          alt="Melanie Groß"
-          width="219"
-          height="328"
-          loading="lazy"
-        />
-        <h2>Melanie Groß</h2>
-        <h3>Medizinische Fachangestellte</h3>
-        <p>Ausbildung zur medizininischen Fachangestellten.</p>
-        <ul>
-          <li>2006 bis 2009</li>
-          <li>Anstellung in einer orthopädischen Praxis</li>
-        </ul>
-        <ul>
-          <li>2009 bis 2016</li>
-          <li>Tätigkeit in einer chirurgischen Praxis.</li>
-        </ul>
-        <ul>
-          <li>Seit 01.08.2016</li>
-          <li>verstärke ich das Team dieser Praxis.</li>
-        </ul>
-      </section>
-      <section hidden id="carmenWindow" class="popups">
-        <img
-          src="images/Carmen_profil.webp"
-          alt="Carmen Menz"
-          width="219"
-          height="328"
-          loading="lazy"
-        />
-        <h2>Carmen Menz</h2>
-        <h3>Medizinische Fachangestellte</h3>
-        <p>
-          Ausbildung zur medizinischen Fachangestellten in einer orthopädischen
-          Praxis. Danach Tätigkeiten in verschiedenen Fachbereichen wie z.B.
-          Dermatologie und Abrechnungswesen.
-        </p>
-        <ul>
-          <li>Von 2011 bis 2016</li>
-          <li>Anstellung in einer chirurgischen Praxis</li>
-        </ul>
-        <ul>
-          <li>Seit 01.04.2016</li>
-          <li>verstärke ich das Team in dieser Praxis</li>
-        </ul>
-      </section>
-
-      <section hidden id="miriamWindow" class="popups">
-        <img
-          src="images/Miriam_profil.webp"
-          alt="Miriam Hartmann"
-          width="219"
-          height="328"
-          loading="lazy"
-        />
-        <h2>Miriam Hartmann</h2>
-        <h3>Medizinische Fachangestellte</h3>
-        <p>
-          Ausbildung zur Medizinischen Fachangestellten in dieser Praxis unter
-          Herrn Dr. Wahabzadeh. <br />Nach Babypause Tätigkeit in einer
-          Kinderarztpraxis
-        </p>
-        <ul>
-          <li>2009</li>
-          <li>Wechsel zurück an ihre alte Wirkungsstätte</li>
-        </ul>
-        <p>Diabetologische Fortbildungen und Schulungen im Wundmanagement</p>
       </section>
     </div>
 
