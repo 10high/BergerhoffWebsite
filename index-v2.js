@@ -199,8 +199,8 @@ async function displayHolidayData() {
   elsToAppend.forEach((el) => urlaubsnotizen.appendChild(el));
 }
 
-addEvent2Array(querySelectAllArr(".heads"), "click", showStaffInfo);
-addEvent2Array(querySelectAllArr(".heads"), "keydown", showStaffInfo);
+addEvent2Array(querySelectAllArr(".heads__btn"), "click", showStaffInfo);
+addEvent2Array(querySelectAllArr(".heads__btn"), "keydown", showStaffInfo);
 
 document
   .getElementById("harryCloseBtn")
