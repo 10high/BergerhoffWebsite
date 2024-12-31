@@ -1,6 +1,5 @@
 const modalWindows = {
   harrySelector: "#harryWindow",
-  melanieSelector: "#melanieWindow",
   carmenSelector: "#carmenWindow",
   miriamSelector: "#miriamWindow",
 };
@@ -205,9 +204,6 @@ addEvent2Array(querySelectAllArr(".heads__btn"), "keydown", showStaffInfo);
 document
   .getElementById("harryCloseBtn")
   .addEventListener("click", () => closeStaffWindow("harrySelector"));
-document
-  .getElementById("melanieCloseBtn")
-  .addEventListener("click", () => closeStaffWindow("melanieSelector"));
 document
   .getElementById("carmenCloseBtn")
   .addEventListener("click", () => closeStaffWindow("carmenSelector"));
