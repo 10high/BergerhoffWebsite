@@ -1,7 +1,6 @@
 const modalWindows = {
   harrySelector: "#harryWindow",
   carmenSelector: "#carmenWindow",
-  miriamSelector: "#miriamWindow",
   claudiaSelector: "#claudiaWindow",
 };
 
@@ -208,10 +207,6 @@ document
 document
   .getElementById("carmenCloseBtn")
   .addEventListener("click", () => closeStaffWindow("carmenSelector"));
-document
-  .getElementById("miriamCloseBtn")
-  .addEventListener("click", () => closeStaffWindow("miriamSelector"));
-
 document
   .getElementById("claudiaCloseBtn")
   .addEventListener("click", () => closeStaffWindow("claudiaSelector"));
