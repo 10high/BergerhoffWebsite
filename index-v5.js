@@ -1,6 +1,7 @@
 const modalWindows = {
   harrySelector: "#harryWindow",
   claudiaSelector: "#claudiaWindow",
+  stefanieSelector: "#stefanieWindow",
 };
 
 const querySelectAllArr = (query) => document.querySelectorAll(query);
@@ -206,5 +207,8 @@ document
 document
   .getElementById("claudiaCloseBtn")
   .addEventListener("click", () => closeStaffWindow("claudiaSelector"));
+document
+    .getElementById("stefanieCloseBtn")
+    .addEventListener("click", () => closeStaffWindow("claudiaSelector"));
 
 document.addEventListener("DOMContentLoaded", displayHolidayData);
