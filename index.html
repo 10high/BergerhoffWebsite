@@ -4,12 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      http-equiv="cache-control"
-      content="no-cache, no-store, must-revalidate"
-    />
-    <meta http-equiv="expires" content="0" />
-    <meta http-equiv="pragma" content="no-cache" />
     <link rel="canonical" href="https://www.praxisbergerhoff.de" />
     <meta
       name="description"
@@ -161,6 +155,21 @@
                 loading="lazy"
               />
             </button>
+              <button
+                      type="button"
+                      class="heads__btn"
+                      id="stefanieSelector"
+                      title="Auswählen, um mehr Info zu Stefanie Schröder lesen"
+              >
+                  <img
+                          class="heads__img"
+                          src="images/stefanie_profil.jpg"
+                          alt="Stefanie Schröder"
+                          width="219"
+                          height="308"
+                          loading="lazy"
+                  />
+              </button>
           </div>
         </div>
       </div>
@@ -326,7 +335,6 @@
           xmlns="http://www.w3.org/2000/svg"
           width="16"
           height="16"
-          fill="currentColor"
           class="bi bi-sun-fill"
           viewBox="0 0 16 16"
         >
@@ -546,13 +554,13 @@
         <section class="links">
           <h4>Informative Links</h4>
 
-          <a href="http://www.rki.de/DE/Content/Infekt/Impfen/impfen.html"
+          <a href="https://www.rki.de/DE/Content/Infekt/Impfen/impfen.html"
             >Robert Koch Institut - Impfungen</a
           >
-          <a href="http://www.kvno.de/20patienten/index.html"
+          <a href="https://www.kvno.de/20patienten/index.html"
             >Kassenärztliche Vereinigung Nordrhein</a
           >
-          <a href="http://www.german-doctors.de/">German Doctors</a>
+          <a href="https://www.german-doctors.de/">German Doctors</a>
         </section>
       </div>
     </main>
@@ -643,12 +651,68 @@
           loading="lazy"
         />
         <h2>Claudia Afentakis</h2>
-        <h3>Rezeption</h3>
         <p>
           Seit 01.12.2024 arbeite ich als Quereinsteigerin in der Praxis und bin
           überwiegend an der Rezeption tätig.
         </p>
       </section>
+
+        <section hidden id="stefanieWindow" class="popups">
+            <div class="popup__closeButtonWrapper">
+                <button id="stefanieCloseBtn" type="button" class="popup__closeButton">
+                    X
+                </button>
+            </div>
+            <img
+                    src="images/stefanie_profil.jpg"
+                    alt="Stefanie Schröder"
+                    width="219"
+                    height="308"
+                    loading="lazy"
+            />
+            <h2>Stefanie Schröder</h2>
+            <ul>
+                <li>
+                    1994&mdash;1997
+                </li>
+                <li>
+                    Berufsausbildung zur Arzthelferin bei Dr. Thomas
+                    Kuske
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    1997&mdash;1999
+                </li>
+                <li>
+                    Praxis Dr. Kuske
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    1999&mdash;2003
+                </li>
+                <li>
+                    Praxis Frau Dr. Rost-Meyer
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    2016&mdash;2017
+                </li>
+                <li>
+                    Praxis Frau Dr. Rost-Meyer (Krankheitsvertretung)
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    2017&mdash;2025
+                </li>
+                <li>
+                    Schulbegleitung
+                </li>
+            </ul>
+        </section>
     </div>
 
     <footer>
