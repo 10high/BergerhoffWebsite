@@ -1055,9 +1055,15 @@ li {
     /*section wrapper */
     grid-column: 2 / 6;
     grid-row: 1 / 6;
-    margin: 0 0 0 2rem;
+    margin: 10px 0 0 2rem;
     max-width: 100%;
     height: auto;
+  }
+
+  .lineFromPhoto1 {
+    /*connecting line */
+    grid-column: 5 / 5;
+    grid-row: 4 / 5;
   }
 
   .lineToOpening {
